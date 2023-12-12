@@ -19,11 +19,11 @@ export default function SelectedContact({
       }
     }
     fetchUserData();
-  }, [selectedContactId]);
+  }, []);
 
   console.log("contact: ", contact);
   return (
-    <div>
+    <div className="selectedContainer">
       <div>
         {contact ? (
           <ul>
